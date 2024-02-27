@@ -58,6 +58,7 @@ function App() {
   // listening for messages starts here
   const handleMessage = (event) => {
     if (event.data.type === "sdkData") {
+      console.log("SDK D", event?.data);
       setConfig(event.data.config?.config);
     }
   };
